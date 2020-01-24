@@ -1,6 +1,6 @@
 class TitleValidator < ActiveModel::Validator
   PATTERNS = [
-    /Won't Believe/
+    /Won't Believe/,
     /
   ]
   
