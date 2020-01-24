@@ -1,6 +1,7 @@
 class TitleValidator < ActiveModel::Validator
   PATTERNS = [
-    
+    /Won't Believe/
+    /
   ]
   
   def validate(post)
