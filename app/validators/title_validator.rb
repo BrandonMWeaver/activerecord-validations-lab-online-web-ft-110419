@@ -7,7 +7,7 @@ class TitleValidator < ActiveModel::Validator
   ]
   
   def validate(post)
-    unless PATTERNS.none? { |p| p.match}
+    unless PATTERNS.none? { |p| p.match? post.title}
       post.errors[:title] << "Not clickbait"
     end
   end
